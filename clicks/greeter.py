@@ -1,5 +1,10 @@
 # greeter.py
 
+import click
 
+
+@click.command()
+@click.argument("name")
 def greet():
-    print("Hello")
+    """Displays a greeting to the user."""
+    click.echo("Hello")
