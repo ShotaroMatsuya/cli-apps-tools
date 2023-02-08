@@ -1,2 +1,4 @@
 [console_scripts]
+add = calculator:add
 greetings = greeter:greet
+subtract = calculator:subtract
