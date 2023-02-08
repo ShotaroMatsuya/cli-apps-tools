@@ -1,4 +1,6 @@
 README.md
+authenticate.py
+calculator.py
 greeter.py
 setup.py
 cli_tools.egg-info/PKG-INFO
