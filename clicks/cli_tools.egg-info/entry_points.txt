@@ -1,6 +1,7 @@
 [console_scripts]
 add = calculator:add
 authenticate = authenticate:auth
+concat = fileutils:concat
 greetings = greeter:greet
 note = fileutils:note
 subtract = calculator:subtract

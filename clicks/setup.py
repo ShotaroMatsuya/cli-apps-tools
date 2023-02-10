@@ -11,7 +11,8 @@ setup(
             "add=calculator:add",
             "subtract=calculator:subtract",
             "authenticate=authenticate:auth",
-            "note=fileutils:note"
+            "note=fileutils:note",
+            "concat=fileutils:concat",
         ]
     },  # greetingsコマンド=greeterモジュールのgreetメソッド
 )
