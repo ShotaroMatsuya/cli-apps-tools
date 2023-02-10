@@ -40,9 +40,16 @@ def download(inputs):
         this fetches web resources by url and saves them locally to filename.
     """
 
-    with click.progressbar(inputs) as bar:
-        for item in bar:
+    with click.progressbar(
+        length=len(inputs),
+        show_eta=False,
+        item_show_func=lambda fname: f"Downloading {fname}",
+    ) as bar:
+        for i, item in enumerate(inputs):
             url, file_name = item.split(",")
             response = requests.get(url)
             with open(file_name, "w") as fo:
                 fo.write(response.text)
+            bar.update(i, file_name)  # updateされるたびにitem_show_funcが実行される
+
+    click.echo("Download complete.")
