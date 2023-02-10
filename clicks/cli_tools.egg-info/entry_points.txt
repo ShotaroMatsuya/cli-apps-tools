@@ -2,4 +2,5 @@
 add = calculator:add
 authenticate = authenticate:auth
 greetings = greeter:greet
+note = fileutils:note
 subtract = calculator:subtract

@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="cli-tools",
     version="1.0",
-    py_modules=["greeter", "calculator", "authenticate"],
+    py_modules=["greeter", "calculator", "authenticate", "fileutils"],
     install_requires=["Click"],
     entry_points={
         "console_scripts": [
@@ -11,6 +11,7 @@ setup(
             "add=calculator:add",
             "subtract=calculator:subtract",
             "authenticate=authenticate:auth",
+            "note=fileutils:note"
         ]
     },  # greetingsコマンド=greeterモジュールのgreetメソッド
 )
