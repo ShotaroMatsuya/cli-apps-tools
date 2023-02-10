@@ -4,7 +4,7 @@ setup(
     name="cli-tools",
     version="1.0",
     py_modules=["greeter", "calculator", "authenticate", "fileutils", "notes"],
-    install_requires=["Click"],
+    install_requires=["Click", "requests"],
     entry_points={
         "console_scripts": [
             "greetings=greeter:greet",
@@ -14,6 +14,7 @@ setup(
             "note=fileutils:note",
             "concat=fileutils:concat",
             "notes=notes:main",
+            "download=fileutils:download",
         ]
     },  # greetingsコマンド=greeterモジュールのgreetメソッド
 )

@@ -2,6 +2,7 @@
 import typing
 
 import click
+import requests
 
 
 @click.command()
@@ -26,3 +27,22 @@ def concat(inputs: typing.Collection[typing.IO], output: typing.IO):
         for line in f:
             output.write(line)
         click.echo(f"{f.name} written to {output.name}")
+
+
+@click.command()
+@click.argument("inputs", nargs=-1)
+def download(inputs):
+    """Downloads web resource from (url, filename) input pairs.
+
+    Example:
+        download http://xyz.com/p1.txt,page1.txt http://xyz.com/p2.txt,page2.txt
+
+        this fetches web resources by url and saves them locally to filename.
+    """
+
+    with click.progressbar(inputs) as bar:
+        for item in bar:
+            url, file_name = item.split(",")
+            response = requests.get(url)
+            with open(file_name, "w") as fo:
+                fo.write(response.text)
