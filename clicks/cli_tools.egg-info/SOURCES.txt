@@ -3,6 +3,7 @@ authenticate.py
 calculator.py
 fileutils.py
 greeter.py
+notes.py
 setup.py
 cli_tools.egg-info/PKG-INFO
 cli_tools.egg-info/SOURCES.txt

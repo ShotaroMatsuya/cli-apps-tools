@@ -2,3 +2,4 @@ authenticate
 calculator
 fileutils
 greeter
+notes
