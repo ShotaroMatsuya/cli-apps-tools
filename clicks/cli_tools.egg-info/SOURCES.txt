@@ -11,3 +11,4 @@ cli_tools.egg-info/dependency_links.txt
 cli_tools.egg-info/entry_points.txt
 cli_tools.egg-info/requires.txt
 cli_tools.egg-info/top_level.txt
+tests/test_add.py
