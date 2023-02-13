@@ -1,7 +1,11 @@
 {
   "name": "Cli-Apps-Workspace",
   "dockerComposeFile": ["../docker-compose.yml"],
-  "extensions": ["ms-python.python", "ms-python.black-formatter"],
+  "extensions": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "naumovs.color-highlight"
+  ],
   "service": "clicks",
   "workspaceFolder": "/code"
 }

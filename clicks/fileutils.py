@@ -3,6 +3,7 @@ import typing
 
 import click
 import requests
+from pyfiglet import Figlet
 
 
 @click.command()
@@ -10,6 +11,8 @@ import requests
 def note(fo: typing.IO):
     """Write notes input to given file."""
     click.echo("Enter lines of text below and CTRL+C to exit.")
+    f = Figlet(font="slant")
+    click.echo(f.renderText("text to render"))
     try:
         while True:
             value = click.prompt("", prompt_suffix=">")

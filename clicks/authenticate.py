@@ -21,5 +21,3 @@ def auth():
         click.echo(f"Logging in admin {username} (ID = {admin_id})")
     else:
         click.echo(f"Logging in {username}")
-
-    click.echo(f"Logging in {username}")
