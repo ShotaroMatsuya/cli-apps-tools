@@ -18,6 +18,10 @@ setup(
             "color=colors_cli:main",
             "launch=launch_cli:main",
             "show_help=show_help_cli:main",
+            "extra_color=extra_colors_cli:main",
+            "extra_tree=extra_tree_cli:main",
+            "extra_config=extra_config_cli:main",
+            "extra_dym=extra_dym_cli:main"
         ]
     },  # greetingsコマンド=greeterモジュールのgreetメソッド
 )
