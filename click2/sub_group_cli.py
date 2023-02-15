@@ -1,6 +1,15 @@
 import click
 
 
+def recursive_help(cmd, parent=None):
+    ctx = click.core.Context(cmd, info_name=cmd.name, parent=parent)
+    print(cmd.get_help(ctx))
+    print("-----------------")
+    commands = getattr(cmd, "commands", {})
+    for sub in commands.values():
+        recursive_help(sub, ctx)
+
+
 @click.group()
 def main():
     """"""
@@ -39,3 +48,9 @@ def capitalize():
 def capitalize_upper(name):
     """Capitalize and Convert to Uppercase"""
     click.echo(name.upper())
+
+
+@main.command()
+def show_help():
+    """Show All Help"""
+    recursive_help(main)
