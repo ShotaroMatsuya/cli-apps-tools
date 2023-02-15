@@ -1,3 +1,9 @@
 black
 flake8
 click
+
+click-help-colors
+click-didyoumean
+click-plugins
+click-command-tree
+click-config-file
