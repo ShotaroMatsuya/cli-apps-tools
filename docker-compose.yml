@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  clicks:
+  click:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
     tty: true
     volumes:
-      - ./clicks:/code
+      - ./click2:/code
     ports:
       - '8000:8000'
