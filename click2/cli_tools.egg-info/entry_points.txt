@@ -1,0 +1,12 @@
+[console_scripts]
+args = args_cli:main
+basic = basic_cli:main
+color = colors_cli:main
+confirm = confirm_cli:download
+ctx = ctx_cli:main
+group = group_cli:main
+launch = launch_cli:main
+prompt = prompt_cli:main
+show_help = show_help_cli:main
+sub_group = sub_group_cli:main
+var = var_cli:main
