@@ -51,7 +51,7 @@ def download(inputs):
         for i, item in enumerate(inputs):
             url, file_name = item.split(",")
             response = requests.get(url)
-            with open(file_name, "w") as fo:
+            with open(file_name, "wb") as fo:
                 fo.write(response.text)
             bar.update(i, file_name)  # updateされるたびにitem_show_funcが実行される
 
