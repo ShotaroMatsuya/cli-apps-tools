@@ -8,6 +8,7 @@ def main():
         prog="basiccli",
         description="A simple cli with argparse",
         epilog="Additional Description",
+        # allow_abbrev=False,
     )
 
     # Version
