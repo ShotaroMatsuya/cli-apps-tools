@@ -1,12 +1,21 @@
 version: '3'
 
 services:
-  click:
+  # click:
+  #   build:
+  #     context: .
+  #     dockerfile: .devcontainer/Dockerfile
+  #   tty: true
+  #   volumes:
+  #     - ./click2:/code
+  #   ports:
+  #     - '8000:8000'
+  argparse:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
     tty: true
     volumes:
-      - ./click2:/code
+      - ./argparse:/code
     ports:
       - '8000:8000'
