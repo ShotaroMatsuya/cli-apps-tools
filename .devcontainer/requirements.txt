@@ -7,3 +7,5 @@ click-didyoumean
 click-plugins
 click-command-tree
 click-config-file
+
+termcolor
