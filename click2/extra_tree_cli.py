@@ -1,15 +1,18 @@
 import click
+from click_plugins import with_plugins
+from pkg_resources import iter_entry_points
 
 
 def recursive_help(cmd, parent=None):
     ctx = click.core.Context(cmd, info_name=cmd.name, parent=parent)
     print(cmd.get_help(ctx))
-    print("-----------------")
     commands = getattr(cmd, "commands", {})
     for sub in commands.values():
         recursive_help(sub, ctx)
 
 
+# Parent
+@with_plugins(iter_entry_points('click_command_tree'))
 @click.group()
 def main():
     """"""
