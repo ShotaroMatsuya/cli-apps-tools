@@ -6,6 +6,6 @@
     "ms-python.black-formatter",
     "naumovs.color-highlight"
   ],
-  "service": "click",
+  "service": "argparse",
   "workspaceFolder": "/code"
 }
