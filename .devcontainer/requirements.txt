@@ -12,3 +12,6 @@ termcolor
 colorama
 
 fire
+
+rich
+commonmark
