@@ -10,3 +10,8 @@ click-config-file
 
 termcolor
 colorama
+
+fire
+
+rich
+commonmark

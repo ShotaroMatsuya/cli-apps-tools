@@ -10,12 +10,21 @@ services:
   #     - ./click2:/code
   #   ports:
   #     - '8000:8000'
-  argparse:
+  # argparse:
+  #   build:
+  #     context: .
+  #     dockerfile: .devcontainer/Dockerfile
+  #   tty: true
+  #   volumes:
+  #     - ./argparse:/code
+  #   ports:
+  # - '8000:8000'
+  fire:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
     tty: true
     volumes:
-      - ./argparse:/code
+      - ./fire:/code
     ports:
       - '8000:8000'

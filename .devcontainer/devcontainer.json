@@ -4,8 +4,9 @@
   "extensions": [
     "ms-python.python",
     "ms-python.black-formatter",
-    "naumovs.color-highlight"
+    "naumovs.color-highlight",
+    ""
   ],
-  "service": "argparse",
+  "service": "fire",
   "workspaceFolder": "/code"
 }
