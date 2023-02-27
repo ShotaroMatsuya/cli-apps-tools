@@ -1,0 +1,10 @@
+FROM node:16.19.1-buster
+
+WORKDIR /code
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+EXPOSE 8000
