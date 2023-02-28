@@ -9,6 +9,6 @@
     "usernamehw.errorlens",
     "esbenp.prettier-vscode"
   ],
-  "service": "node",
+  "service": "python",
   "workspaceFolder": "/code"
 }
