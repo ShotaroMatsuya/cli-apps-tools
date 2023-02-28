@@ -30,11 +30,11 @@ services:
   #     - '8000:8000'
   node:
     build:
-      context: ./commander
+      context: ./vorpal
       dockerfile: Dockerfile.node
     tty: true
     stdin_open: true
     volumes:
-      - ./commander:/code
+      - ./vorpal:/code
     ports:
       - '8000:8000'
