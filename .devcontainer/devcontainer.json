@@ -5,8 +5,10 @@
     "ms-python.python",
     "ms-python.black-formatter",
     "naumovs.color-highlight",
-    ""
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "esbenp.prettier-vscode"
   ],
-  "service": "fire",
+  "service": "node",
   "workspaceFolder": "/code"
 }

@@ -19,12 +19,22 @@ services:
   #     - ./argparse:/code
   #   ports:
   # - '8000:8000'
-  fire:
+  # fire:
+  #   build:
+  #     context: .
+  #     dockerfile: .devcontainer/Dockerfile
+  #   tty: true
+  #   volumes:
+  #     - ./fire:/code
+  #   ports:
+  #     - '8000:8000'
+  node:
     build:
-      context: .
-      dockerfile: .devcontainer/Dockerfile
+      context: ./vorpal
+      dockerfile: Dockerfile.node
     tty: true
+    stdin_open: true
     volumes:
-      - ./fire:/code
+      - ./vorpal:/code
     ports:
       - '8000:8000'
