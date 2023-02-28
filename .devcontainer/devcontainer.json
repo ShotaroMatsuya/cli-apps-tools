@@ -7,8 +7,9 @@
     "naumovs.color-highlight",
     "dbaeumer.vscode-eslint",
     "usernamehw.errorlens",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "julialang.language-julia"
   ],
-  "service": "node",
-  "workspaceFolder": "/code"
+  "service": "julia",
+  "workspaceFolder": "/home/jovyan/code"
 }

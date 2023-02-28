@@ -38,3 +38,14 @@ services:
       - ./vorpal:/code
     ports:
       - '8000:8000'
+  julia:
+    image: jupyter/datascience-notebook:latest
+    user: root
+    ports:
+      - '8101:8888'
+    environment:
+      - GRANT_SUDO=yes
+      - JUPYTER_ENABLE_LAB=yes
+    volumes:
+      - ./julia:/home/jovyan/code
+    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.notebook_dir='/home/jovyan/work'
