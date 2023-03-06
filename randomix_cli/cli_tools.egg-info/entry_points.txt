@@ -1,0 +1,2 @@
+[console_scripts]
+randomix = randomix_click:main
