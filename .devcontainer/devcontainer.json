@@ -7,7 +7,8 @@
     "naumovs.color-highlight",
     "dbaeumer.vscode-eslint",
     "usernamehw.errorlens",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "julialang.language-julia"
   ],
   "service": "python",
   "workspaceFolder": "/code"

@@ -49,7 +49,6 @@ services:
     volumes:
       - ./julia:/home/jovyan/code
     command: start-notebook.sh --NotebookApp.token='' --NotebookApp.notebook_dir='/home/jovyan/work'
-
   python:
     build:
       context: .
