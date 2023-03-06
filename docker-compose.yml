@@ -1,33 +1,33 @@
 version: '3'
 
 services:
-  # click:
-  #   build:
-  #     context: .
-  #     dockerfile: .devcontainer/Dockerfile
-  #   tty: true
-  #   volumes:
-  #     - ./click2:/code
-  #   ports:
-  #     - '8000:8000'
-  # argparse:
-  #   build:
-  #     context: .
-  #     dockerfile: .devcontainer/Dockerfile
-  #   tty: true
-  #   volumes:
-  #     - ./argparse:/code
-  #   ports:
-  # - '8000:8000'
-  # fire:
-  #   build:
-  #     context: .
-  #     dockerfile: .devcontainer/Dockerfile
-  #   tty: true
-  #   volumes:
-  #     - ./fire:/code
-  #   ports:
-  #     - '8000:8000'
+  click:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    tty: true
+    volumes:
+      - ./click2:/code
+    ports:
+      - '8000:8000'
+  argparse:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    tty: true
+    volumes:
+      - ./argparse:/code
+    ports:
+      - '8000:8000'
+  fire:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    tty: true
+    volumes:
+      - ./fire:/code
+    ports:
+      - '8000:8000'
   node:
     build:
       context: ./vorpal
@@ -49,3 +49,12 @@ services:
     volumes:
       - ./julia:/home/jovyan/code
     command: start-notebook.sh --NotebookApp.token='' --NotebookApp.notebook_dir='/home/jovyan/work'
+  python:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    tty: true
+    volumes:
+      - ./misc:/code
+    ports:
+      - '8000:8000'

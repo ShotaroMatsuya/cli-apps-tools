@@ -15,3 +15,5 @@ fire
 
 rich
 commonmark
+
+halo

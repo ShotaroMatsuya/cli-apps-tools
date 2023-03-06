@@ -10,6 +10,6 @@
     "esbenp.prettier-vscode",
     "julialang.language-julia"
   ],
-  "service": "julia",
-  "workspaceFolder": "/home/jovyan/code"
+  "service": "python",
+  "workspaceFolder": "/code"
 }
