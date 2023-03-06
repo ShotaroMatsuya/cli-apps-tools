@@ -14,4 +14,14 @@ colorama
 fire
 
 rich
+
 commonmark
+
+halo
+
+PyInquirer
+
+terminaltables
+
+pandas
+tabulate
