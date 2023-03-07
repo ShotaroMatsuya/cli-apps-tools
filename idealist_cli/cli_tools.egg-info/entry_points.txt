@@ -1,0 +1,3 @@
+[console_scripts]
+idealist = idealist:main
+idealist_crud = idealist_crud:main
