@@ -1,0 +1,3 @@
+[console_scripts]
+jobtracker = jobtracker:main
+jobtracker_cli = jobtracker_cli:main
