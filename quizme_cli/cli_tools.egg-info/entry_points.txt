@@ -1,0 +1,3 @@
+[console_scripts]
+quizme = quizme:main
+quizme_inq = quizme_inquirer:main
