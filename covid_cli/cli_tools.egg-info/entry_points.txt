@@ -1,0 +1,3 @@
+[console_scripts]
+covid = covid:main
+covid_cli = covid_cli:main
